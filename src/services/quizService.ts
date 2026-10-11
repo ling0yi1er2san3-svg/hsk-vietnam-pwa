@@ -167,8 +167,7 @@ function buildQuestion(word: VocabularyEntry, type: QuizQuestionType, pool: Voca
 
 export async function buildQuiz(options: QuizBuildOptions): Promise<QuizQuestion[]> {
   const levels = options.levels.length ? options.levels : [1, 2, 3, 4, 5, 6];
-  const types: QuizQuestionType[] =
-  options.types.length ? options.types : ['hanzi-meaning'];
+  const types: QuizQuestionType[] = options.types.length ? options.types : ['hanzi-meaning'];
   const all = await db.vocabulary.toArray();
   const pool = all.filter((word) => levels.includes(word.hskLevel) && word.hanzi && word.pinyin && word.meaningVi);
   const progress = await db.progress.toArray();

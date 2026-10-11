@@ -15,8 +15,7 @@ export function ImportExcel() {
         <div className="min-w-0 flex-1">
           <h2 className="text-xl font-bold">Import dữ liệu HSK</h2>
           <p className="mt-1 text-sm leading-6 text-slate-600">
-            Chọn file <strong>.xlsx hoặc .xlsm</strong>. Ứng dụng chỉ đồng bộ bảng từ vựng;
-            tiến độ học, yêu thích và lịch sử quiz được giữ nguyên trong IndexedDB.
+            Đây là chức năng <strong>tùy chọn</strong>. App đã có sẵn HSK1–HSK6; chỉ chọn file <strong>.xlsx hoặc .xlsm</strong> khi muốn cập nhật nguồn từ vựng. Tiến độ học, yêu thích và lịch sử quiz được giữ nguyên trong IndexedDB.
           </p>
 
           <input

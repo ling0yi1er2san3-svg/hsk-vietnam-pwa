@@ -66,8 +66,8 @@ export default function App() {
             <div className="flex items-center justify-between"><NetworkStatus /><InstallAppButton compact /></div>
             <ThemeControl />
             <div className="rounded-2xl bg-orange-50 p-4 text-xs leading-5 text-slate-600 ring-1 ring-orange-100">
-              <div className="font-black text-orange-800">Phase 13</div>
-              Production · backup/restore · deploy miễn phí.
+              <div className="font-black text-orange-800">Phase 14</div>
+              HSK tích hợp sẵn · không cần import lần đầu.
             </div>
           </div>
         </aside>
@@ -97,7 +97,7 @@ export default function App() {
             <div className="mt-8 space-y-3 border-t border-slate-200 pt-5">
               <div className="flex items-center justify-between"><NetworkStatus /><InstallAppButton /></div>
               <ThemeControl />
-              <p className="text-xs leading-5 text-slate-500">Khi đã mở app một lần và dữ liệu HSK đã được import, các màn hình chính tiếp tục hoạt động khi mất Internet.</p>
+              <p className="text-xs leading-5 text-slate-500">Dữ liệu HSK đã được tích hợp sẵn. Sau lần mở đầu tiên, các màn hình chính tiếp tục hoạt động khi mất Internet.</p>
             </div>
           </aside>
         </div>
