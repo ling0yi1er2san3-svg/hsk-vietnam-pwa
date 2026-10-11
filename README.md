@@ -81,3 +81,12 @@ Tables:
 - `quizHistory`
 
 Dữ liệu này nằm trên thiết bị, không tự đồng bộ lên Cloudflare/GitHub. Vì vậy nên backup định kỳ.
+
+## Phase 14 – dữ liệu HSK tích hợp sẵn
+
+- `public/data/hsk-vocabulary.json` chứa 5.002 dòng HSK1–HSK6 chuyển từ workbook gốc.
+- Khi mở app lần đầu trên một thiết bị/trình duyệt mới, app tự nạp JSON này vào IndexedDB.
+- Người dùng không cần import Excel để bắt đầu học.
+- Tab Nhập Excel vẫn được giữ để chủ app cập nhật dữ liệu sau này.
+- Nếu IndexedDB đã có vocabulary, app không tự ghi đè dữ liệu hiện hữu.
+- Progress, favorites và quiz history vẫn là dữ liệu cá nhân cục bộ theo từng thiết bị.
